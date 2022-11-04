@@ -25,21 +25,17 @@ const playerInput = prompt("Rock, Paper or Scissors? Make your choice!");
     console.log('You have not made a choice! Try again?');
   }
 
-// declare a winner
+// 1 round game
 
-const playRound = function(playerSelection, computerSelection){
+const playRound = function(){
   if (playerInput === 'Rock' && computerInput === 'Paper'){
     console.log('Paper beats Rock. You lose!');
   } else if (playerInput === 'Rock' && computerInput === 'Scissors'){
-    console.log('Rock beats Scissors. You win!');
-  } else if (playerInput === 'Rock' && computerInput === 'Rock'){
-    console.log('You tie!');
+    console.log('Rock beats Scissors. You win!');  
   } else if (playerInput === 'Paper' && computerInput === 'Rock'){
     console.log('Paper beats Rock. You win!');
   } else if (playerInput === 'Paper' && computerInput === 'Scissors'){
-    console.log('Scissors beats Paper. You lose!');
-  } else if (playerInput === 'Paper' && computerInput === 'Paper'){
-    console.log('You tie!');
+    console.log('Scissors beats Paper. You lose!'); 
   } else if (playerInput === 'Scissors' && computerInput === 'Rock'){
     console.log('Rock beats Scissors. You lose!');
   } else if (playerInput === 'Scissors' && computerInput === 'Paper'){
@@ -50,5 +46,9 @@ const playRound = function(playerSelection, computerSelection){
 };
 
 playRound();
+
+// 5 rounds game
+
+
 
 // Make your function’s playerSelection parameter case-insensitive
