@@ -29,21 +29,21 @@ const playerInput = prompt("Rock, Paper or Scissors? Make your choice!");
 
 const playRound = function(playerSelection, computerSelection){
   if (playerInput === 'Rock' && computerInput === 'Paper'){
-    console.log('Paper bits rock. You lose!');
+    console.log('Paper beats Rock. You lose!');
   } else if (playerInput === 'Rock' && computerInput === 'Scissors'){
-    console.log('Rock bits scissors. You win!');
+    console.log('Rock beats Scissors. You win!');
   } else if (playerInput === 'Rock' && computerInput === 'Rock'){
     console.log('You tie!');
   } else if (playerInput === 'Paper' && computerInput === 'Rock'){
-    console.log('Paper bits rock. You win!');
+    console.log('Paper beats Rock. You win!');
   } else if (playerInput === 'Paper' && computerInput === 'Scissors'){
-    console.log('Scissors bits paper. You lose!');
+    console.log('Scissors beats Paper. You lose!');
   } else if (playerInput === 'Paper' && computerInput === 'Paper'){
     console.log('You tie!');
   } else if (playerInput === 'Scissors' && computerInput === 'Rock'){
-    console.log('Rock bits scissors. You lose!');
+    console.log('Rock beats Scissors. You lose!');
   } else if (playerInput === 'Scissors' && computerInput === 'Paper'){
-    console.log('Scissors bits paper. You win!');
+    console.log('Scissors beats Paper. You win!');
   } else {
     console.log('You tie!');
   }
