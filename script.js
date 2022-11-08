@@ -1,5 +1,3 @@
-console.log('Hello');
-
 const choices = ['rock', 'paper', 'scissors'];
 
 // computer selection
@@ -47,11 +45,11 @@ function declareWinner(playerSelection, computerSelection){
 function playRound(playerSelection, computerSelection){
   const result = declareWinner(playerSelection, computerSelection);
   if(result == "Tie"){
-    return "It's a Tie!";
+    return "It's a tie!";
   } else if(result == "Player won"){
-    return `You Win! ${playerSelection} beats ${computerSelection}`;
+    return `You win! ${playerSelection} beats ${computerSelection}`;
   } else{
-    return `You Lose! ${computerSelection} beats ${playerSelection}`;
+    return `You lose! ${computerSelection} beats ${playerSelection}`;
   }
 }
 
@@ -61,12 +59,27 @@ function playRound(playerSelection, computerSelection){
 
 // 5 rounds game
 
-function game(){  
+function game(){
+  let scorePlayer = 0;
+  let scoreComputer = 0; 
   for (let i = 0; i < 5; i++){
     // const playerSelection = "rock";
     const playerSelection = getPlayerChoice();
     const computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
+    if(declareWinner(playerSelection, computerSelection) == "Player won"){
+      scorePlayer++;
+    } else if(declareWinner(playerSelection, computerSelection) == "Computer won"){
+      scoreComputer++;
+    } 
+  }
+  console.log("Game Over!");
+  if(scorePlayer > scoreComputer){
+    console.log("Player is the winner!");
+  } else if(scorePlayer < scoreComputer){
+    console.log("Computer is the winner!");
+  } else{
+    console.log("It's an absolute TIE!");
   }
 }
 
