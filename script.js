@@ -67,6 +67,7 @@ function game(){
     const playerSelection = getPlayerChoice();
     const computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
+    console.log("-----------------------------------");
     if(declareWinner(playerSelection, computerSelection) == "Player won"){
       scorePlayer++;
     } else if(declareWinner(playerSelection, computerSelection) == "Computer won"){
