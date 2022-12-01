@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  background-color: #1F2937;
+}
+
+.header h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #f2d648;
+  font-size: 54px;
+  font-weight: 400;
+}
