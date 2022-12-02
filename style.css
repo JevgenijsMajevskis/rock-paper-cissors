@@ -76,6 +76,19 @@ body {
   font-family: 'Nerko One', cursive;
 }
 
+.main-scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px; 
+}
+
+.main-scoreboard h3 {
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
 /*footer*/
 
 .footer {
