@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!--fonts: Nerko One-->
+  <link rel="stylesheet" href="style.css">  
   <title>Rock Paper Scissors</title>
 </head>
 <body>
@@ -19,10 +18,15 @@
       <h2>Do you want to play a little game?</h2>
       <p>Then choose Rock, Paper or Scissors as a weapon and try to beat the computer!</p>
     </div>
+    <div class="main-scoreboard">
+      <h3>Your choice: <span id="player"></span></h3>
+      <h3>Computer choice: <span id="comuter"></span></h3>
+      <h3>Result: <span id="result"></span></h3>
+    </div>
     <div class="main-buttons">
-      <button>Rock</button>
-      <button>Paper</button>
-      <button>Scissors</button>
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
     </div>
   </main>
   <footer class="footer">    
