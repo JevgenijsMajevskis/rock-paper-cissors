@@ -1,4 +1,4 @@
-// COMPLETE GAME IN UI
+// COMPLETE UI GAME
 
 const choices = ["rock", "paper", "scissors"];
 const playerChoiceDisplay = document.getElementById("player");
@@ -35,9 +35,12 @@ function getResult() {
     (playerChoice == 'scissors' && computerChoice == 'paper') ||
     (playerChoice == 'paper' && computerChoice == 'rock')
   ) {
-    result = "You won!";
+    result = `You won, ${playerChoice} beats ${computerChoice}!`;
   } else {
-    result = "Computer won.";
+    result = `Computer won, ${computerChoice} beats ${playerChoice}...`;
   }
   resultDisplay.innerHTML = result;
 }
+
+// 5 rounds game
+
