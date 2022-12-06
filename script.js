@@ -41,6 +41,3 @@ function getResult() {
   }
   resultDisplay.innerHTML = result;
 }
-
-// 5 rounds game
-
