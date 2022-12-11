@@ -19,8 +19,6 @@ P.S. the JavaScript file is saved inside consoleScript.js located in the console
 
     UI game:
 
-It is the same Rock, Paper, Scissors game, but with the styled user interface (or simply webpage), where player can choose one of three buttons with different choices. Compute still choose randomly.
+It is the same Rock, Paper, Scissors game, but with the styled user interface (or simply webpage), where player can choose one of three buttons with different choices. Compute still choose randomly. Player choice, computer choice and the result for each round is displayed on the webpage.
 
-The score is displayed on the screen, but after five rounds only one of two can be maned a WINNER!
-
-In order to make this work, the plane script.js was used, however some of the function from the previous phase were still useful.
+In order to make this work, the empty script.js was used, however some of the function from the previous phase were still useful.
